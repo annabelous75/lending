@@ -4,18 +4,562 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ruby</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" class="rel" />
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <ul class="header-info-list">
+        <li class="header-info-geo">
+          <a href="" class="header-info-geo-link"
+            >A creative agency based in Helsinki</a
+          >
+        </li>
+        <li class="header-info-mail">
+          <a href="" class="header-info-mail-link">hello@robi.com</a>
+        </li>
+      </ul>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item">Home</li>
+          <li class="nav-item">About</li>
+          <li class="nav-item">News</li>
+          <li class="nav-item">Contact</li>
+          <li class="nav-item">Cart</li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <section class="hero"></section>
-      <section class="about"></section>
-      <section class="benefits"></section>
-      <section class="tarrif"></section>
-      <section class="work"></section>
-      section.
+      <section class="hero">
+        <img
+          alt="hero-guy"
+          src="./img/hero-guy.jpg"
+          width="740px"
+          height="610px"
+          class="img-hero-guy"
+        />
+        <img
+          alt="hero-logo"
+          src="./img/hero-logo.png"
+          width="410px"
+          height="234px"
+          class="img-hero-logo"
+        />
+        <div class="div-hero-title">
+          <h1 class="hero-title">
+            <span class="hero-third-title">"We believe that</span
+            ><span class="hero-second-title"> the power of design</span> helps
+            <span class="businesses">businesses."</span>
+          </h1>
+        </div>
+
+        <button class="button-hero" type="button">
+          <span class="button-span-work">Work </span
+          ><span class="button-span-with">with us</span>
+        </button>
+      </section>
+      <section class="partners">
+        <h2 class="partners-title">
+          We partner with
+          <span class="partner-title-first">forward-thinking</span
+          ><span class="partner-title-second"> startups.</span>
+        </h2>
+        <div class="img-partners">
+          <img
+            alt="partners"
+            src="./img/partners.png"
+            width="1023px"
+            height="94px"
+          />
+        </div>
+      </section>
+      <section class="about">
+        <div class="about-flex-text">
+          <h3 class="about-title">The perfect</h3>
+          <p class="about-subtitle">Agency for your brand</p>
+          <p class="about-text-firstpara">
+            We love what we do and create partnerships with our clients to
+            ensure their digital transformation is positioned for long-term
+            success.
+          </p>
+          <p class="about-text-secondpara">
+            We believe that the human dimensions essential to start any
+            successful project and that this is where splendid emotional
+            relationships between the company and people are born.
+          </p>
+        </div>
+        <div class="awards-list-flex">
+          <ul class="about-awards-list">
+            <div class="about-text-paragraph">
+              <p class="about-awards-title">Awwards</p>
+              <span class="about-awards-title-span">14</span>
+            </div>
+            <li class="awards-item">
+              <p class="awards-text">Site of the Day</p>
+              <span class="awards-item-span">3</span>
+            </li>
+            <li class="awards-item">
+              <p class="awards-text">Developer Award</p>
+              <span class="awards-item-span">1</span>
+            </li>
+            <li class="awards-item">
+              <p class="awards-text">Honorable Mention</p>
+              <span class="awards-item-span">7</span>
+            </li>
+            <li class="awards-item">
+              <p class="awards-text">Mobile Exelence</p>
+              <span class="awards-item-span">3</span>
+            </li>
+          </ul>
+          <ul class="about-css-list">
+            <div class="about-text-paragraph">
+              <p class="about-css-title">CSS Design Awards</p>
+              <span class="about-css-title-span">34</span>
+            </div>
+            <li class="css-item">
+              <p class="css-text">UX Design Award</p>
+              <span class="css-item-span">10</span>
+            </li>
+            <li class="css-item">
+              <p class="css-text">UI Design Award</p>
+              <span class="css-item-span">4</span>
+            </li>
+            <li class="css-item">
+              <p class="css-text">Innovation Design Award</p>
+              <span class="css-item-span">7</span>
+            </li>
+            <li class="css-item">
+              <p class="css-text">Website of the Day</p>
+              <span class="css-item-span">13</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="works">
+        <h3 class="works-title">
+          selected <span class="works-title-span">work</span>
+        </h3>
+        <ul class="works-list">
+          <li class="works-item">
+            <img
+              src="./img/conference.jpg"
+              alt="conference"
+              width="470px"
+              height="502px"
+              class="img-first"
+            />
+            <h4 class="works-item-title">Conference</h4>
+            <p class="works-item-subtitle">Art Direction, Design</p>
+          </li>
+          <li class="works-item">
+            <img
+              src="./img/magazine.jpg"
+              alt="magazine"
+              width="470px"
+              height="502px"
+              class="img-first"
+            />
+            <h4 class="works-item-title">Magazine</h4>
+            <p class="works-item-subtitle">Logo, User Interface</p>
+          </li>
+          <li class="works-item">
+            <img
+              src="./img/ivor.jpg"
+              alt="application"
+              width="470px"
+              height="502px"
+              class="img-second"
+            />
+            <h4 class="works-item-title">Ivor Application</h4>
+            <p class="works-item-subtitle">User Interface</p>
+          </li>
+          <li class="works-item">
+            <img
+              src="./img/black apple.jpg"
+              alt="black apple application"
+              width="470px"
+              height="502px"
+              class="img-second"
+            />
+            <h4 class="works-item-title">Black Apple Watch</h4>
+            <p class="works-item-subtitle">Logo, User Interface</p>
+          </li>
+          <li class="works-item">
+            <img
+              src="./img/flying.jpg"
+              alt="flying to the moon"
+              width="470px"
+              height="502px"
+              class="img-third"
+            />
+            <h4 class="works-item-title">Flying to the moon</h4>
+            <p class="works-item-subtitle">User Experiences</p>
+          </li>
+          <li class="works-item">
+            <img
+              src="./img/dharma.jpg"
+              alt="dharma"
+              width="470px"
+              height="502px"
+              class="img-third"
+            />
+            <h4 class="works-item-title">Dharma Webfont</h4>
+            <p class="works-item-subtitle">Branding, Web Design</p>
+          </li>
+        </ul>
+      </section>
+      <section class="features">
+        <div class="feature-flex">
+          <div class="feature-name">
+            <h3 class="features-title">
+              <b>Improve </b>your brand <b>with an awesome site</b>
+            </h3>
+            <h4 class="feature-subtitle">
+              Comprehensive
+              <span class="span-feature-subtitle">Brand</span>
+            </h4>
+            <p class="features-text">
+              Your brand is first and foremost an image for both your market and
+              your audience.
+            </p>
+            <h4 class="feature-subtitle">
+              Web
+              <span class="span-feature-subtitle">Presence</span>
+            </h4>
+            <p class="features-text">
+              A web presence is the digital representation of a company, brand,
+              or personal brand.
+            </p>
+          </div>
+          <img src="./img/feature.jpg" alt="main feature" />
+        </div>
+      </section>
+      <section class="feedback">
+        <h3 class="feedback-title">
+          What
+          <span class="feedback-title-span"> they</span> think
+        </h3>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p class="slide-text">
+                "The public is more familiar with bad design than good design.
+                It is, in effect, conditioned to prefer bad design, because that
+                is what it lives with."
+              </p>
+              <img
+                src="./img/girl-left-feedback.jpg"
+                alt="girl left"
+                id="img"
+              />
+              <p class="slide-name">Paige Brennan</p>
+              <p class="slide-position">Webflow Founder</p>
+            </div>
+            <div class="swiper-slide">
+              <p class="slide-text">
+                "The public is more familiar with bad design than good design.
+                It is, in effect, conditioned to prefer bad design, because that
+                is what it lives with."
+              </p>
+              <img
+                src="./img/girl-center-feedback.jpg"
+                alt="girl center"
+                id="img"
+              />
+              <p class="slide-name">Catrin Ward</p>
+              <p class="slide-position">Webflow Founder</p>
+            </div>
+            <div class="swiper-slide">
+              <p class="slide-text">
+                "The public is more familiar with bad design than good design.
+                It is, in effect, conditioned to prefer bad design, because that
+                is what it lives with."
+              </p>
+              <img
+                src="./img/boy-right-feedback.jpg"
+                alt="boy right"
+                id="img"
+              />
+              <p class="slide-name">Matthew Webster</p>
+              <p class="slide-position">Webflow Founder</p>
+            </div>
+            ...
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <!-- If we need scrollbar -->
+        </div>
+      </section>
+      <section class="skills">
+        <div class="skills-flex">
+          <div class="skills-wrapper">
+            <div class="skills-content">
+              <h3 class="skills-title">
+                Our<span class="skills-title-span"> team</span> Skills
+              </h3>
+              <ul class="skills-list">
+                <li class="skills-item">
+                  <p class="skills-text-item">Graphic Design</p>
+                  <span class="sills-list-span">80%</span>
+                </li>
+                <li class="skills-item">
+                  <p class="skills-text-item">Lead Generation</p>
+                  <span class="sills-list-span">41%</span>
+                </li>
+                <li class="skills-item">
+                  <p class="skills-text-item">Photoshop</p>
+                  <span class="sills-list-span">70%</span>
+                </li>
+                <li class="skills-item">
+                  <p class="skills-text-item">Illustration</p>
+                  <span class="sills-list-span">100%</span>
+                </li>
+              </ul>
+              <p class="skills-text">
+                * Over 8 years creating templates on Marketplace
+              </p>
+            </div>
+          </div>
+          <img
+            src="./img/skills.jpg"
+            alt="skills"
+            width="800px"
+            height="615px"
+          />
+        </div>
+      </section>
+      <section class="facts">
+        <h3 class="facts-title">
+          Fun
+          <span class="facts-subtitle">Facts</span>
+        </h3>
+        <ul class="facts-list">
+          <li class="facts-item">
+            <div class="facts-div-item">
+              <img
+                alt="years"
+                src="./img/years.png"
+                width="25px"
+                height="10px"
+              />
+              <h3 class="fact-title">8</h3>
+            </div>
+            <p class="fact-text">Years on market</p>
+          </li>
+          <li class="facts-item">
+            <div class="facts-div-item">
+              <img
+                alt="projects"
+                src="./img/project.png"
+                width="25px"
+                height="10px"
+              />
+              <h3 class="fact-title">110+</h3>
+            </div>
+            <p class="fact-text">Project done</p>
+          </li>
+          <li class="facts-item">
+            <h3 class="fact-title">15</h3>
+            <p class="fact-text-3n">Hero's member</p>
+          </li>
+          <li class="facts-item">
+            <div class="facts-div-item">
+              <img alt="cups" src="./img/cup.png" width="25px" height="10px" />
+              <h3 class="fact-title">100+</h3>
+            </div>
+            <p class="fact-text">Cups of coffee</p>
+          </li>
+        </ul>
+      </section>
+      <section class="blog">
+        <div class="blog-title-para">
+          <h3 class="blog-title">
+            Our<span class="span-blog-title"> Blog</span>
+          </h3>
+          <button class="button-blog" type="button">
+            <a href="./blog.html" class="blog-link"
+              >View all <span class="button-span-blog">Post</span></a
+            >
+          </button>
+        </div>
+        <ul class="blog-list">
+          <li class="blog-item">
+            <img
+              src="./img/blog-first.jpg"
+              alt="first picture"
+              width="372px"
+              height="382px"
+            />
+            <p class="blog-pretitle">Marketing</p>
+            <h4 class="blog-itemtitle">
+              Curating a workplace that inspires all of us
+            </h4>
+            <p class="blog-subtitle">February 3, 2021</p>
+          </li>
+          <li class="blog-item">
+            <img
+              src="./img/blog-second.jpg"
+              alt="second picture"
+              width="372px"
+              height="382px"
+            />
+            <p class="blog-pretitle">Design</p>
+            <h4 class="blog-itemtitle">
+              Designers who changed the web with Webflow
+            </h4>
+            <p class="blog-subtitle">February 25, 2021</p>
+          </li>
+          <li class="blog-item">
+            <img
+              src="./img/blog-third.jpg"
+              alt="third picture"
+              width="372px"
+              height="382px"
+            />
+            <p class="blog-pretitle">Code</p>
+            <h4 class="blog-itemtitle">
+              Communication between studio departments
+            </h4>
+            <p class="blog-subtitle">March 9, 2021</p>
+          </li>
+        </ul>
+      </section>
+      <section class="talk">
+        <div class="talk-div-flex">
+          <div class="talk-div">
+            <h2 class="talk-title">
+              Let's<span class="talk-title-span"> Talk</span>
+            </h2>
+            <p class="talk-text">Feel free to contact us</p>
+          </div>
+          <button type="button" class="button-talk">
+            View on
+            <span class="button-span">Designer</span>
+          </button>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="footer-flex">
+        <img
+          src="./img/logo-footer.png"
+          alt="logo of footer"
+          width="110px"
+          height="63px"
+        />
+        <ul class="site-link-list">
+          <li class="site-link-item">
+            <a href="https://www.facebook.com/"
+              ><img
+                src="./img/icon-facebook.png"
+                alt="facebook"
+                width="16px"
+                height="16px"
+            /></a>
+          </li>
+          <li class="site-link-item">
+            <a href="https://www.instagram.com/"
+              ><img
+                src="./img/icon-instagram.png"
+                alt="instagram"
+                width="16px"
+                height="16px"
+            /></a>
+          </li>
+          <li class="site-link-item">
+            <a href="https://twitter.com/"
+              ><img
+                src="./img/icon-twitter.png"
+                alt="twitter"
+                width="16px"
+                height="16px"
+            /></a>
+          </li>
+          <li class="site-link-item">
+            <a href="https://ua.linkedin.com/"
+              ><img
+                src="./img/linkedln.png"
+                alt="linkedln"
+                width="16px"
+                height="16px"
+            /></a>
+          </li>
+          <li class="site-link-item">
+            <a href="https://www.popsugar.com/"
+              ><img
+                src="./img/icon-last.png"
+                alt="last"
+                width="16px"
+                height="16px"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-list">
+        <div class="footer-address">
+          <ul class="footer-list-address">
+            <p class="footer-title-address">Address</p>
+            <li class="footer-item-address">
+              <p class="footer-item-text">14 New South Head Rd,</p>
+            </li>
+            <li class="footer-item-address">
+              <p class="footer-item-text">Triple Bay 3148</p>
+            </li>
+            <li class="footer-item-address">
+              <p class="footer-item-text">London, UK</p>
+            </li>
+          </ul>
+          <button class="button-footer" type="button">
+            <a href="https://goo.gl/maps/g9vPKzgh7XjRAsnQ6" class="button-link"
+              >Find on map</a
+            >
+          </button>
+          <p class="footer-describe">
+            © This is a Deni Bozo template powered by Webflow
+          </p>
+        </div>
+        <ul class="footer-list-site">
+          <p class="footer-title-site">Sitemap</p>
+          <li class="footer-item-site"><p class="footer-item-text">Home</p></li>
+          <li class="footer-item-site">
+            <p class="footer-item-text">About</p>
+          </li>
+          <li class="footer-item-site"><p class="footer-item-text">News</p></li>
+          <li class="footer-item-site">
+            <p class="footer-item-text">Pricing</p>
+          </li>
+          <li class="footer-item-site">
+            <p class="footer-item-text">Style Guide</p>
+          </li>
+          <li class="footer-item-site">
+            <p class="footer-item-text">Image Licensing</p>
+          </li>
+        </ul>
+        <ul class="footer-list-contacts">
+          <p class="footer-title-contacts">Contact</p>
+          <li class="footer-item-contacts">
+            <p class="footer-item-text">P: 3740 213 301</p>
+          </li>
+          <li class="footer-item-contacts">
+            <p class="footer-item-text">E: contact@robi.com</p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>
