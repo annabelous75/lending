@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="./css/styles.css" class="rel" />
   </head>
   <body>
-    <header class="header">
+    <div class="body">
+     <header class="header">
       <ul class="header-info-list">
         <li class="header-info-geo">
           <a href="" class="header-info-geo-link"
@@ -58,14 +59,14 @@
           class="img-hero-logo"
         />
         <div class="div-hero-title">
-          <h1 class="hero-title">
+          <h1 class="hero-title animation">
             <span class="hero-third-title">"We believe that</span
             ><span class="hero-second-title"> the power of design</span> helps
             <span class="businesses">businesses."</span>
           </h1>
         </div>
 
-        <button class="button-hero" type="button">
+        <button class="button-hero" type="button" data-modal-open>
           <span class="button-span-work">Work </span
           ><span class="button-span-with">with us</span>
         </button>
@@ -452,7 +453,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer animation">
       <div class="footer-flex">
         <img
           src="./img/logo-footer.png"
@@ -528,7 +529,7 @@
             >
           </button>
           <p class="footer-describe">
-            © This is a Deni Bozo template powered by Webflow
+            &#169 This is a Deni Bozo template powered by Webflow
           </p>
         </div>
         <ul class="footer-list-site">
@@ -559,7 +560,45 @@
         </ul>
       </div>
     </footer>
+    </div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close type="button" class="modal__button">
+        </button>
+        <p class="form__title">We will call you later</p>
+        <form class="form">
+          <div class="form__field">
+            <label for="name" class="form__label">Name</label>
+            <input type="text" name="user-name" class="form__input" id="name" />
+            
+          </div>
+          <div class="form__field">
+            <label for="tel" class="form__label">Phone</label>
+            <input type="text" name="tel" class="form__input" id="tel" />
+            
+          </div>
+          <div class="form__field">
+            <label for="mail" class="form__label">Email</label>
+            <input type="text" name="email" class="form__input" id="mail" />
+            
+          </div>
+          <div class="form__field">
+            <label for="comment" class="form__comment">Comments</label>
+            <textarea
+              rows="3"
+              name="comment-input"
+              class="form__textarea"
+              placeholder="Enter the text..."
+              id="comment"
+            ></textarea>
+          </div>
+          <button type="submit" class="button__form__submit">Send</button>
+        </form>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/modal.js"></script>
     <script src="./js/swiper.js"></script>
   </body>
 </html>
